@@ -7,7 +7,7 @@ resource "aws_lambda_layer_version" "deno" {
 resource "aws_lambda_function" "api" {
   filename         = var.lambda_file
   function_name    = local.api_lambda_name
-  handler          = "src/api.api"
+  handler          = "src/lambda.api"
   timeout          = 10
   memory_size      = 128
   role             = aws_iam_role.lambda.arn
