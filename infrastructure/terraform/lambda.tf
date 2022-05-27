@@ -7,8 +7,8 @@ resource "aws_lambda_layer_version" "deno" {
 resource "aws_lambda_function" "api" {
   filename         = var.lambda_file
   function_name    = local.api_lambda_name
-  handler          = "src/api.handler"
-  timeout          = 30
+  handler          = "src/api.api"
+  timeout          = 10
   memory_size      = 128
   role             = aws_iam_role.lambda.arn
   runtime          = "provided.al2"
