@@ -1,2 +1,8 @@
 # deno-lambda-repro
-Test deno-lambda deploy issues
+
+To test Run
+
+```
+./scripts/deploy dev
+./scripts/invoke
+```
