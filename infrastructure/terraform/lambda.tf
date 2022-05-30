@@ -16,4 +16,9 @@ resource "aws_lambda_function" "api" {
 
   layers = [aws_lambda_layer_version.deno.arn]
 
+  environment {
+    variables = {
+      DENO_IMPORTMAP  = "./import_map.json" 
+    }
+  }
 }

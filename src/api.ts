@@ -1,8 +1,8 @@
 import {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
-  LambdaContext as Context,
-} from "./deps.ts";
+  Context,
+} from "lambda";
 
 export async function handler(
   event: APIGatewayProxyEventV2,

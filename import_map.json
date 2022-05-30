@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "./": "./",
+    "/": "./",
+    "lambda": "https://deno.land/x/lambda@1.19.3/mod.ts"
+  }
+}
